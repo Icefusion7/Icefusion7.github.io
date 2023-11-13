@@ -1,0 +1,209 @@
+
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+  body {
+    background-color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display:flex; 
+    flex-direction:column
+    
+  
+  }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+}
+
+main {
+  width: 75vh;
+  padding: 2em;
+}
+main p {
+  font-size: 90%;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  
+}
+
+aside {
+  color: black;
+  width: 25vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-right: solid 1px rgb(156, 154, 154);
+
+}
+a {
+  text-decoration: none;
+}
+
+
+aside > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+aside img {
+    width: 65%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+ 
+
+  /****************************************************/
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color:grey;
+    width: 75vh;
+    text-decoration: none;
+
+}
+
+header:hover {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+    
+}
+
+ nav a {
+    display:flex; 
+    color:grey;
+    border-radius: 1px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+    
+}
+header nav a:hover {
+    color: #E651E8;
+}
+header nav .active {
+    color: #E651E8;
+}
+
+
+/**********************************************************/
+hr.purple {
+  border: 2px solid purple;
+}
+.Edu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.distance {
+  margin-top: 5em;
+  color: grey;
+}
+
+h1 {
+    font-size: 150%;
+    margin-bottom: 1.7em;
+    color: grey;
+}
+
+h2 {
+    font-size: 100%;
+    color: grey;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 100%;
+    color: black;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    
+    
+}
+#bar {
+    width: 100%;
+    height: 1rem;
+    color: aqua;
+    margin-bottom: 1em;
+}
+
+footer {
+  display:flex;
+  justify-content: space-evenly;
+  border-top: 1px solid rgb(156, 154, 154);
+  
+  padding: 10px 10px 5px 10px;
+  color: grey;
+  
+}
+
+   @media  (min-width: 1px) {
+        nav {
+          padding: 20px;
+        }
+        
+        html {
+          
+          margin: auto;
+        }
+        main {
+          display: flex;
+          flex-direction: column;
+        }
+        header {
+          width: 75vh;
+        }
+        .main-container {
+          display:flex;
+          flex-direction: column;
+        }
+        aside {
+          border-bottom: solid 1px rgb(156, 154, 154);
+        }
+
+      
+   
+    }
+    @media screen and (min-width: 750px) {
+      nav {
+        padding: 20px;
+      }
+      html {
+        max-width : 75vh;
+        margin: auto;
+      }
+      main {
+        width: 75vh;
+      }
+      header {
+        width: 75vh;
+      }
+      .main-container {
+        flex-direction: row;
+        display:flex;
+      }
+
+    
+ 
+  }
+
+   
+
+ 
